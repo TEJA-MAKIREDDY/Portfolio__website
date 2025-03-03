@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Teja's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Teja's Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">☰</div>
+        </div>
+    </nav>
+
+    <section class="about">
+        <div class="container">
+            <h1>About Me</h1>
+            <p>I am <strong>Makireddy Siva Sai Teja</strong>, a passionate IT student currently pursuing my B.Tech in Information Technology at Pragati Engineering College. My interests lie in cloud computing and software development.</p>
+            <h2>Education Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">B.Tech in Information Technology - Pragati Engineering College (GPA: 8.27)</div>
+                <div class="timeline-item">Intermediate, MPC - KSN Junior College (Percentage: 93%)</div>
+                <div class="timeline-item">SSC - Pragati High School (GPA: 9.7)</div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

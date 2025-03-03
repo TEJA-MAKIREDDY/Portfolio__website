@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Teja's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Teja's Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">☰</div>
+        </div>
+    </nav>
+
+    <section class="resume">
+        <div class="container">
+            <h1>My Resume</h1>
+            <p>View my detailed resume below. It includes my education, skills, projects, and more.</p>
+            <div class="resume-wrapper">
+                <iframe class="resume-container" src="Teja_Resume (3).pdf#toolbar=0" type="application/pdf"></iframe>
+            </div>
+            <p>If the resume doesn't load, <a href="Teja_Resume (3).pdf" target="_blank" class="btn">download it here</a>.</p>
+        </div>
+    </section>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

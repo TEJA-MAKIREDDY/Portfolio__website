@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Teja's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Teja's Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">☰</div>
+        </div>
+    </nav>
+
+    <section class="skills">
+        <div class="container">
+            <h1>Technical Skills</h1>
+            <div class="skill">Programming Languages: C, Python, Java, SQL</div>
+            <div class="skill">Frontend Development: HTML, CSS</div>
+            <div class="skill">Tools & Frameworks: Git, GitHub</div>
+            <div class="skill">Core CS Concepts: Data Structures, DBMS, Operating Systems</div>
+        </div>
+    </section>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

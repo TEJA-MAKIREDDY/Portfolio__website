@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Teja's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Teja's Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">☰</div>
+        </div>
+    </nav>
+
+    <section class="projects">
+        <div class="container">
+            <h1>My Projects</h1>
+            <p>Here are some of my recent works showcasing my skills in software development.</p>
+            <div class="project-list">
+                <div class="project-card">
+                    <h2>Smart Gesture Recognition and Cursor Control System</h2>
+                    <p>Designed a gesture-based virtual mouse using Python, MediaPipe, and OpenCV. Supports real-time gesture recognition for cursor movement, clicks, scrolling, and drag-and-drop.</p>
+                    <a href="https://github.com/TEJA-MAKIREDDY" target="_blank" class="btn">View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h2>Number Guessing Game</h2>
+                    <p>A Java-based game where users guess a random number between 1 and 100 within 5 attempts.</p>
+                    <a href="https://github.com/TEJA-MAKIREDDY" target="_blank" class="btn">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

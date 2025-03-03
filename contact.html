@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Teja's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Teja's Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="burger">☰</div>
+        </div>
+    </nav>
+
+    <section class="contact">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <p>Feel free to reach out through any of the following channels:</p>
+            <ul class="contact-list">
+                <li>
+                    <span class="contact-label">Email:</span>
+                    <a href="mailto:teja41622@gmail.com">teja41622@gmail.com</a>
+                </li>
+                <li>
+                    <span class="contact-label">Phone:</span>
+                    <strong>9059826269</strong>
+                </li>
+                <li>
+                    <span class="contact-label">LinkedIn:</span>
+                    <a href="https://www.linkedin.com/in/m-siva-sai-teja-32b160250/" target="_blank" class="btn">My LinkedIn</a>
+                </li>
+                <li>
+                    <span class="contact-label">GitHub:</span>
+                    <a href="https://github.com/TEJA-MAKIREDDY" target="_blank" class="btn">My GitHub</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
